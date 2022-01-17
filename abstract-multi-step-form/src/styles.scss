@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+@include mat-core();
+
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: Roboto,
+  "Helvetica Neue", sans-serif;
+}
+
+
+.amsf-form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+
+  &__group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+
+    &--flex-end {
+      justify-content: flex-end;
+    }
+  }
+}
